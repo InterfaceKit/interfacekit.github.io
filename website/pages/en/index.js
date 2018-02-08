@@ -80,9 +80,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html', language)}>Example Link</Button>
-            <Button href={docUrl('doc2.html', language)}>Example Link 2</Button>
+            <Button href="#try">Get Started</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -103,16 +101,19 @@ const Features = props => (
   <Block layout="fourColumn">
     {[
       {
-        content: 'This is the content of my feature',
-        image: imgUrl('ik.svg'),
-        imageAlign: 'top',
-        title: 'Feature One'
+        content:
+          'Native iOS and Android components, plus pure JavaScript implementations of complete features like image galleries or pickers',
+        title: 'High quality components'
       },
       {
-        content: 'The content of my second feature',
-        image: imgUrl('ik.svg'),
-        imageAlign: 'top',
-        title: 'Feature Two'
+        content:
+          'No need to install the whole library, just use and combine the packages you need for better maintenance and isolation',
+        title: 'Independent packages'
+      },
+      {
+        content:
+          'All components follow either Material or Apple Human Interface guidelines for better integration',
+        title: 'Compilant design'
       }
     ]}
   </Block>
@@ -144,10 +145,11 @@ const TryOut = props => (
   <Block id="try">
     {[
       {
-        content: 'Talk about trying this out',
-        image: imgUrl('ik.svg'),
+        content:
+          'Just browse our organization and pick the component(s) you want to use in your app!',
+        image: imgUrl('gh.png'),
         imageAlign: 'left',
-        title: 'Try it Out'
+        title: 'Get started'
       }
     ]}
   </Block>
@@ -205,10 +207,7 @@ class Index extends React.Component {
         <HomeSplash language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
           <TryOut />
-          <Description />
           <Showcase language={language} />
         </div>
       </div>

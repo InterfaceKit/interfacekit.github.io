@@ -8,24 +8,42 @@
 /* List of projects/orgs using your project for the users page */
 const users = [
   {
-    caption: 'User1',
-    image: '/test-site/img/ik.svg',
-    infoLink: 'https://www.facebook.com',
+    caption: 'APSL',
+    image: '/interfacekit/img/logo_apsl.png',
+    infoLink: 'https://github.com/apsl',
+    pinned: true
+  },
+  {
+    caption: 'Rentals PMS',
+    image: '/interfacekit/img/rentals-pms.png',
+    infoLink: 'https://www.rentalspms.com',
+    pinned: true
+  },
+  {
+    caption: 'Ibacar',
+    image: '/interfacekit/img/ibacar-logo.png',
+    infoLink: 'https://www.ibacar.com',
+    pinned: true
+  },
+  {
+    caption: 'Nautic Advisor',
+    image: '/interfacekit/img/nautic-logo.png',
+    infoLink: 'https://www.nauticadvisor.com',
     pinned: true
   }
 ];
 
 const siteConfig = {
-  title: 'Test Site' /* title for your website */,
-  tagline: 'A website for testing',
-  url: 'https://facebook.github.io' /* your website url */,
-  baseUrl: '/test-site/' /* base url for your project */,
-  projectName: 'test-site',
+  title: 'InterfaceKit' /* title for your website */,
+  tagline: 'A collection of high-quality React Native components',
+  url: 'https://interfacekit.github.io' /* your website url */,
+  baseUrl: '/interfacekit/' /* base url for your project */,
+  projectName: 'interfacekit',
   headerLinks: [
     { doc: 'doc1', label: 'Docs' },
     { doc: 'doc4', label: 'API' },
-    { page: 'help', label: 'Help' },
-    { blog: true, label: 'Blog' }
+    { page: 'help', label: 'Help' }
+    // { blog: true, label: 'Blog' }
   ],
   users,
   /* path to images for header/footer */
@@ -38,19 +56,15 @@ const siteConfig = {
     secondaryColor: '#88CCF1'
   },
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
-  copyright:
-    'Copyright © ' +
-    new Date().getFullYear() +
-    ' Your Name or Your Company Name',
+  copyright: 'Copyright © ' + new Date().getFullYear() + ' APSL',
   // organizationName: 'deltice', // or set an env variable ORGANIZATION_NAME
-  // projectName: 'test-site', // or set an env variable PROJECT_NAME
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
     theme: 'default'
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   // You may provide arbitrary config keys to be used as needed by your template.
-  repoUrl: 'https://github.com/facebook/test-site'
+  repoUrl: 'https://github.com/InterfaceKit'
 };
 
 module.exports = siteConfig;

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2017-present, Advanced Programming Solutions, SL.
+ * Copyright (c) 2017-present, APSL - Advanced Programming Solutions, SL.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -54,13 +54,12 @@ class Footer extends React.Component {
               Stack Overflow
             </a>
             <a href="https://discordapp.com/">Project Chat</a>
-            <a href="https://twitter.com/" target="_blank">
+            <a href="https://twitter.com/apsl_web" target="_blank">
               Twitter
             </a>
           </div>
           <div>
             <h5>More</h5>
-            <a href={this.props.config.baseUrl + 'blog'}>Blog</a>
             <a href="https://github.com/InterfaceKit">GitHub</a>
             <a
               className="github-button"
@@ -75,19 +74,17 @@ class Footer extends React.Component {
           </div>
         </section>
 
-        <a
-          href="https://code.facebook.com/projects/"
-          target="_blank"
-          className="fbOpenSource">
+        <a href="https://www.apsl.net" target="_blank" className="fbOpenSource">
           <img
-            src={this.props.config.baseUrl + 'img/oss_logo.png'}
-            alt="Facebook Open Source"
+            src={this.props.config.baseUrl + 'img/apsl-grey.png'}
+            alt="APSL - Advanced Programming Solutions"
             width="170"
             height="45"
           />
         </a>
         <section className="copyright">
-          Copyright &copy; {currentYear} Facebook Inc.
+          Copyright &copy; {currentYear} APSL - Advanced Programming Solutions,
+          SL.
         </section>
       </footer>
     );

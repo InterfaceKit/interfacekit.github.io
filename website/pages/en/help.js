@@ -18,17 +18,17 @@ class Help extends React.Component {
     const supportLinks = [
       {
         content:
-          'Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)',
-        title: 'Browse Docs',
+          'Learn more using the [documentation on this site.](/interfacekit/docs/en/doc1.html)',
+        title: 'Browse Docs'
       },
       {
         content: 'Ask questions about the documentation and project',
-        title: 'Join the community',
+        title: 'Join the community'
       },
       {
         content: "Find out what's new with this project",
-        title: 'Stay up to date',
-      },
+        title: 'Stay up to date'
+      }
     ];
 
     return (
